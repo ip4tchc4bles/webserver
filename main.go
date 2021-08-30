@@ -18,7 +18,7 @@ type Creds struct {
 
 func dbConn() (db *sql.DB) {
 	dbDriver := "mysql"
-	dbUser := "root"
+	dbUser := ""
 	dbPass := ""
 	dbName := "godb"
 	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@/"+dbName)
